@@ -36,6 +36,18 @@
 </head>
 
 <body class="home">
+    <div id="comments" class="comment">
+</div>
+<script>
+JELON.Comment({
+  container: 'comments', // 评论框容器id或对象，留空是默认为 comments 
+  label: '<%- post.slug %>' || '<%- post.path %>',  // 文章标签
+  owner: '<%- theme.comment.owner %>', // GitHub application 创建者
+  repo: '<%- theme.comment.repo %>', // issue 所在仓库名
+  clientId: '<%- theme.comment.client_id %>', // GitHub application client_id
+  clientSecret: '<%- theme.comment.client_secret %>' // GitHub application client_secret
+});
+</script>
     <!--[if lt IE 9]>
     <div class="browsehappy">
         当前网页 <strong>不支持</strong>
