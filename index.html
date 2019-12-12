@@ -39,6 +39,7 @@
     <div id="comments" class="comment">
 </div>
 <script>
+alert('<%- theme.comment.owner %>');
 JELON.Comment({
   container: 'comments', // 评论框容器id或对象，留空是默认为 comments 
   label: '<%- post.slug %>' || '<%- post.path %>',  // 文章标签
