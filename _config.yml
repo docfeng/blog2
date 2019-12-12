@@ -24,6 +24,10 @@ menu:
     name: 留言
     link: /comment/
     icon: icon-comment
+  about2:
+    name: 关于2
+    link: /about/
+    icon: icon-about
 
 #----------------------------
 # 副导航
